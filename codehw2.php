@@ -88,11 +88,11 @@ while ($headCount <2) {
 $flip = mt_rand(0,1);
 	
 	if ($flip == 1) {
-	echo "<img src ='coinhead.jpg' width=50>";
+	echo "<img src ='http://www.coinnews.net/wp-content/uploads/2009/11/America-the-Beautiful-Quarters-Obverse-sm.jpg' width=50>";
 	$flipCount ++; $headCount ++;
 }
 	else {
-	echo "<img src ='cointail.png' width=50>"; $headCount = 0;
+	echo "<img src ='http://www.thecoinspot.com/25c/1988%20Type%202%20Clad%20Washington%20Quarter%20Reverse.png' width=50>"; $headCount = 0;
 
 	$flipCount ++;}
 	
