@@ -21,12 +21,12 @@ $i = substr($isbn, 8, 1);
 $j = substr($isbn, 9, 1);
 
 
-echo "<p>Checking ISBN: $a$b$c$d$e$f$g$h$i$j for validity...</p>";
+echo "<p>Checking ISBN: $isbn for validity...</p>";
 
 
-isbcVal ($a, $b, $c, $d, $e, $f, $g, $h, $i, $j); 
+isbnVal ($a, $b, $c, $d, $e, $f, $g, $h, $i, $j); 
 
-function isbcVal ($a, $b, $c, $d, $e, $f, $g, $h, $i, $j) {
+function isbnVal ($a, $b, $c, $d, $e, $f, $g, $h, $i, $j) {
 	$sum = (10 * $a) + (9 * $b) + (8 * $c) + (7 * $d) + (6 * $e) + (5 * $f) + (4 * $g) + (3 * $h) + (2 * $i) + (1 * $j);
 	$remainder = $sum % 11;
 	if ($j == "X" ) {$j = 10;}
