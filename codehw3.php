@@ -2,6 +2,15 @@
 <html>
 <head> 
 <meta charset="UTF-8">
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}
+</style>
 </head> 
 <body> 
 <?php
@@ -18,19 +27,20 @@ $BookData = array(
 );
 
 
-//$style = 'style="background-color: gray;"' ; ?
+$style = ' style="background-color: #b8b894;"' ; //? '? $style = ' style="background-color: yellow;"' : $style = NULL;'
 echo "<table border=\"1\">";
-  echo "<tr$style>"; 
-    echo "<td>Title</td>";
-    echo "<td>First Name</td>"; 
-    echo "<td>Last Name</td>";
-    echo "<td>Number of Pages</td>";
-    echo "<td>Type</td>";
-    echo "<td>Price</td>";
+  echo "<tr>"; 
+    echo "<td$style>Title</td>";
+    echo "<td$style>First Name</td>"; 
+    echo "<td$style>Last Name</td>";
+    echo "<td$style>Number of Pages</td>";
+    echo "<td$style>Type</td>";
+    echo "<td$style>Price</td>";
   echo "</tr>";
 
+
 foreach ($BookData as $id => $cell) {
-echo "<tr>";
+echo "<tr>"; 
 	print '<td>'.$BookData[$id]['Title'].'</td>';
 	print '<td>'.$BookData[$id]['First Name'].'</td>';
 	print '<td>'.$BookData[$id]['Last Name'].'</td>'; 
@@ -44,7 +54,7 @@ echo "</table><p></p>";
 $sumPrice = $BookData[0]['Price']+$BookData[1]['Price']+$BookData[2]['Price']+$BookData[3]['Price']+$BookData[4]['Price']+$BookData[5]['Price'];
 
 
-echo "Your total price is $".$sumPrice;
+echo '<h2 style="color:#993300;">'."Your total price is $".$sumPrice.'</h2>';
 
 
 /* 
@@ -53,8 +63,10 @@ Challenge 2
 
 echo "<h1>Challenge: Coin Toss - Part C</h1>";
 
-coinTossC (8);
+echo "<p>Beggining the coin flipping, looking for 4 heads in a row</p>";
+echo "<br>";
 
+coinTossC (4);
 
 function coinTossC ($coin){
 
