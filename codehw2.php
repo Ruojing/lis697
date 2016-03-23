@@ -92,7 +92,8 @@ $flip = mt_rand(0,1);
 	$flipCount ++; $headCount ++;
 }
 	else {
-	echo "<img src ='http://www.thecoinspot.com/25c/1988%20Type%202%20Clad%20Washington%20Quarter%20Reverse.png' width=50>"; $headCount = 0;
+	echo "<img src ='http://www.thecoinspot.com/25c/1988%20Type%202%20Clad%20Washington%20Quarter%20Reverse.png' width=50>"; 
+	$headCount = 0;
 
 	$flipCount ++;}
 	
